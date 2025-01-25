@@ -1,8 +1,21 @@
 site_name: COMP423 Course Notes
 theme:
   name: material
+  - content.code.copy
 
 nav:
   - index.md
   - Tutorials:
     - Rust Setup: tutorials/rust-setup.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
