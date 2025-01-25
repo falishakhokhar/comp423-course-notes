@@ -1,12 +1,13 @@
 site_name: COMP423 Course Notes
 theme:
   name: material
-  - content.code.copy
+  features:
+    - content.code.copy
 
 nav:
-  - index.md
+  - Home: index.md
   - Tutorials:
-    - Rust Setup: tutorials/rust-setup.md
+      - Rust Setup: tutorials/rust-setup.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -18,4 +19,3 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
