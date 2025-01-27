@@ -2,11 +2,12 @@
 * Primary author: [Falisha Khokhar](https://github.com/falishakhokhar)
 * Reviewer: [Lucille Moore](https://github.com/lmoore36)
 
-#### Welcome!
+## Introduction
 
-In this tutorial you'll learn how to set up a basic Rust Development Container in VS Code and initialize and configure a GitHub repository with a simple hello world example.
+Welcome! In this tutorial you'll learn how to set up a basic Rust Development Container in VS Code and initialize and configure a GitHub repository with a simple hello world example.
 
->Parts One and Two of this tutorial are adapted from Kris Jordan's [Starting a Static Website Project with MkDocs](https://comp423-25s.github.io/resources/MkDocs/tutorial/) tutorial, with modifications to support Rust development.
+!!! note
+    Parts One and Two of this tutorial are adapted from Kris Jordan's [Starting a Static Website Project with MkDocs](https://comp423-25s.github.io/resources/MkDocs/tutorial/) tutorial, with modifications to support Rust development.
 
 ## Prerequisites
 
@@ -86,7 +87,8 @@ To create a new package with Cargo, Rust's build system and package manager, run
 cargo new rust-tutorial --vcs none
 ```
 
->Cargo new initializes a new git repository by default. The `--vcs none` flag indicates that the package manager should not create a new git repository automatically on your behalf.
+!!! info
+    Cargo new initializes a new git repository by default. The `--vcs none` flag indicates that the package manager should not create a new git repository automatically on your behalf.
 
 Your new `rust-tutorial` directory will then have the following structure:
 
@@ -129,7 +131,8 @@ To run your executable `rust-tutorial` file, enter the following command in your
 Hello COMP423
 ```
 
-> If this workflow seems familiar, that's because `cargo build` is similar to COMP211's `gcc` command, in that they both compile source code into an executable. However, `cargo build` places the executable in `target/debug`, while `gcc` creates the output in the current directory (or as specified by -o). Note that neither of these commands run the executable.
+!!! info
+    If this workflow seems familiar, that's because `cargo build` is similar to COMP211's `gcc` command, in that they both compile source code into an executable. However, `cargo build` places the executable in `target/debug`, while `gcc` creates the output in the current directory (or as specified by -o). Note that neither of these commands run the executable.
 
 Use the `cargo run` command to build and execute the program in one step, without the use of `build`.
 
